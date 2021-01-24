@@ -31,6 +31,14 @@ body {
 .infobox {
   color: black;
 }
+.infobox-focused {
+  color: black;
+  background-color: gray;
+}
+.infobox-link {
+  color: lime;
+  text-decoration: underline;
+}
 .gamebox {
   display: grid;
 }
