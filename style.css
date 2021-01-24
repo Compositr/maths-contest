@@ -25,6 +25,9 @@ body {
   display: grid;
 }
 
+.infobox {
+  color: black;
+}
 .gamebox {
   display: grid;
 }
