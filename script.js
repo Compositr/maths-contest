@@ -2,7 +2,7 @@ var num1;
 var num2;
 var correct = 0;
 var incorrect = 0;
-var timeCount = 120 * 4;
+var timeCount;
 var intId = -1;
 var incorrectQuestions = [];
 
