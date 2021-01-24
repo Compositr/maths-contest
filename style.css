@@ -45,11 +45,6 @@ body {
   border: dashed;
   margin-left: 10%;
 }
-#incorrect {
-  font-size: 5em;
-  border: dashed;
-  margin-left: 10%;
-}
 .ending {
   font-size: 6em;
 }
