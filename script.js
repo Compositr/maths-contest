@@ -5,25 +5,24 @@ var incorrect = 0;
 var timeCount;
 var intId = -1;
 var incorrectQuestions = [];
+var modal = document.getElementById("scoreModal");
 
 // Little easter egg
-if( typeof console === 'object' ) {
-    console.log(
-        '\n' +
-        'Hi there, fellow developer (or curious person)! Thanks for visiting.\n' +
-        'We hope you enjoy your stay here and good luck with the\n' +
-        'multiplication game                                       ("`-’-/").___..--’’"`-._\n' +
-        ':)                                                       `6_ 6  )   `-.  (     ).`-.__.‘)\n' +
-        '                                                         (_Y_.)’  ._   )  `._ `. ``-..-’\n' +
-        '                                                       _..`--’_..-_/  /--’_.’ ,’\n' +
-        '                                                      (il),-’‘  (li),’  ((!.-‘\n' +
-        'Feel free to poke around w/ the code\n' +
-        '\n' +
-        '— @windows95\n'
-    );
+if (typeof console === "object") {
+  console.log(
+    "\n" +
+      "Hi there, fellow developer (or curious person)! Thanks for visiting.\n" +
+      "We hope you enjoy your stay here and good luck with the\n" +
+      'multiplication game                                       ("`-’-/").___..--’’"`-._\n' +
+      ":)                                                       `6_ 6  )   `-.  (     ).`-.__.‘)\n" +
+      "                                                         (_Y_.)’  ._   )  `._ `. ``-..-’\n" +
+      "                                                       _..`--’_..-_/  /--’_.’ ,’\n" +
+      "                                                      (il),-’‘  (li),’  ((!.-‘\n" +
+      "Feel free to poke around w/ the code\n" +
+      "\n" +
+      "— @windows95\n"
+  );
 }
-
-
 
 function startGame() {
   $("#answer").val("");
@@ -31,6 +30,7 @@ function startGame() {
   timeCount = 240;
   correct = 0;
   incorrect = 0;
+  $("#guide").hide();
   $("#result").hide();
   $("#prize").hide();
   $("#ending").hide();
@@ -115,6 +115,7 @@ function endGame() {
   $("#timer").removeClass("red-text");
   clearInterval(intId);
   $("#play").fadeIn(1000, function () {});
+  $("#guide").fadeIn(2000);
 }
 
 function formatTime(toFormat) {
@@ -125,8 +126,9 @@ function formatTime(toFormat) {
 }
 function showResult(correct, incorrect) {
   $("#ending").show();
-  var score = correct - incorrect
-  $("#ending").text(`You answered ${correct} questions correctly. You made ${incorrect} mistakes! We think this is worth ${score} points!`);
+  var score = correct - incorrect;
+  $("#ending").text(
+    `You answered ${correct} questions correctly. You made ${incorrect} mistakes! We think this is worth ${score} points!`
+  );
   document.getElementById("incorrect").innerHTML = incorrectQuestions;
-
 }
