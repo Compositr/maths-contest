@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiplication Competition</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="container-fluid">
+      <div id="controls">
+        <button
+          onclick="startGame(); return false;"
+          class="btn btn-default"
+          id="play"
+        >
+          Start
+        </button>
+        <span id="timer"></span>
+        <span id="result"></span>
+        <span id="incorrect"></span>
+      </div>
+
+      <div id="game">
+        <span id="question"></span>
+        <input type="number" id="answer" />
+      </div>
+
+      <div>
+        <span id="ending" class="ending"></span>
+        <span class="ending" id="incorrect"></span>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

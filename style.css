@@ -1,0 +1,106 @@
+body {
+  background-color: #028090;
+  font-family: "Roboto", sans-serif;
+}
+
+#game {
+  float: center;
+}
+
+.red-text {
+  color: #e71d36;
+}
+
+#question {
+  font-size: 10em;
+  color: #f45b69;
+}
+
+#play {
+  font-size: 10em;
+  background-color: #114b5f;
+  color: white;
+  float: center;
+}
+
+#answer {
+  font-size: 10em;
+  background-color: #e4fde1;
+  width: 50%;
+  opacity: 0.3;
+  border-radius: 5px;
+  border-bottom: 4px solid;
+  color: #456990;
+}
+
+#answer:focus {
+  background-color: ;
+  width: 50%;
+  color: #456990;
+  border: none;
+}
+
+#result {
+  font-size: 5em;
+  border: dashed;
+  margin-left: 10%;
+}
+#incorrect {
+  font-size: 5em;
+  border: dashed;
+  margin-left: 10%;
+}
+.ending {
+  font-size: 6em;
+}
+
+#timer {
+  font-size: 10em;
+}
+
+#timerBar {
+}
+
+.sec0 {
+  width: 0%;
+}
+
+.sec1 {
+  width: 10%;
+}
+
+.sec2 {
+  width: 20%;
+}
+
+.sec3 {
+  width: 30%;
+}
+
+.sec4 {
+  width: 40%;
+}
+
+.sec5 {
+  width: 50%;
+}
+
+.sec6 {
+  width: 60%;
+}
+
+.sec7 {
+  width: 70%;
+}
+
+.sec8 {
+  width: 80%;
+}
+
+.sec9 {
+  width: 90%;
+}
+
+.sec10 {
+  width: 100%;
+}

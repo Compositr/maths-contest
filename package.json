@@ -1,0 +1,11 @@
+{
+  "name": "multiplication-competition",
+  "version": "1.0.0",
+  "description": "A fun multiplication game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo hi"
+  },
+  "author": "Jim Ke",
+  "license": "ISC"
+}
