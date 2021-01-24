@@ -24,6 +24,9 @@ body {
   margin: auto;
   display: grid;
 }
+.navigation {
+  background-color: white;
+}
 
 .infobox {
   color: black;
