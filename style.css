@@ -17,10 +17,16 @@ body {
 }
 
 #play {
-  font-size: 6em;
+  font-size: 2em;
   background-color: #114b5f;
   color: white;
   float: center;
+  margin: auto;
+  display: grid;
+}
+
+.gamebox {
+  display: grid;
 }
 
 #answer {
