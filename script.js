@@ -28,7 +28,7 @@ if( typeof console === 'object' ) {
 function startGame() {
   $("#answer").val("");
   newQuestion();
-  timeCount = 120 * 4;
+  timeCount = 240;
   correct = 0;
   incorrect = 0;
   $("#result").hide();
