@@ -86,7 +86,7 @@ function timed() {
   $("#timer").text(mins + ":" + formatTime(secs));
   if (timeCount === 0) {
     endGame();
-  } else if (timeCount <= 3 * 4) {
+  } else if (timeCount <= 40) {
     $("#timer").addClass("red-text");
   }
   timeCount--;
