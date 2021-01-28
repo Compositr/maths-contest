@@ -1,6 +1,6 @@
 {
   "name": "multiplication-competition",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A fun multiplication game",
   "main": "index.html",
   "scripts": {
