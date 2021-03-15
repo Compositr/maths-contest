@@ -1,8 +1,26 @@
 body {
   background-color: #028090;
   font-family: "Roboto", sans-serif;
+  color: black;
+}
+/* leaderboard.html */
+.alert {
+  padding: 1px;
+  text-decoration: bold;
+}
+.alert-danger {
+  background-color: #ff7373;
+  color: black;
+}
+.alet-good {
+  background-color: #32e370;
+  color: black;
+}
+.alert-hidden {
+  display: none;
 }
 
+/* index.html */
 #game {
   float: center;
 }

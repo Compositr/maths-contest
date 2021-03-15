@@ -38,6 +38,7 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
     </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="auth.js" charset="utf-8"></script>
     <nav class="navigation">
       <ul class="nav nav-pills nav-justified">
@@ -54,33 +55,16 @@
         </li>
       </ul>
     </nav>
-    <h1>Create an account:</h1>
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-        />
-        <div id="emailHelp" class="form-text">
-          This email may be stored in FireBase's (our authentication provider)'s database
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-        />
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+
+    <div class="alert alert-danger alert-hidden" id="alert">
+      <p>Hey! We failed to log you in automatically, please check your cookie settings!</p>
+    </div>
+    <div class="alert alert-good alert-hidden" id="success">
+      <p>Logged in!</p>
+    </div>
+
 
     <!-- partial -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="./script.js"></script>
+
   </body>
 </html>
