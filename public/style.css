@@ -55,7 +55,7 @@ section {
 }
 .navigation {
   background-color: white;
-  color: #0645AD;
+  color: #0645AD !important;
 }
 
 .infobox {
