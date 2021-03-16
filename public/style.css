@@ -65,7 +65,7 @@ section {
   color: black;
   background-color: gray;
 }
-a {
+a:not(.nav-link) {
   color: lime;
   text-decoration: underline;
 }
