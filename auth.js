@@ -1,7 +1,7 @@
 const auth = firebase.auth();
-const db = require('quick.db');
-import firebase from 'firebase'
-require('firebase/auth')
+const db = require("quick.db");
+import firebase from "firebase";
+require("firebase/auth");
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -18,13 +18,13 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-var logonFailedAlert = document.getElementById('alert');
+var logonFailedAlert = document.getElementById("alert");
 
 $(document).ready(function () {
-
   //$("#timerBar").hide(); would hide an element with the ID timerBar
 });
-auth.signInAnonymously()
+auth
+  .signInAnonymously()
   .then(() => {
     $("#success").removeClass("alert-hidden");
   })

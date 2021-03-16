@@ -3,6 +3,17 @@ body {
   font-family: "Roboto", sans-serif;
   color: black;
 }
+/* Index */
+footer {
+  background-color: #898e96;
+}
+div {
+  padding: 10px;
+}
+section {
+  padding: 25px;
+}
+
 /* leaderboard.html */
 .alert {
   padding: 1px;
