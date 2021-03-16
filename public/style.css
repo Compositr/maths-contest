@@ -55,6 +55,7 @@ section {
 }
 .navigation {
   background-color: white;
+  color: #0645AD;
 }
 
 .infobox {
@@ -64,10 +65,11 @@ section {
   color: black;
   background-color: gray;
 }
-a:not(nav) {
+a {
   color: lime;
   text-decoration: underline;
 }
+
 .gamebox {
   display: grid;
 }
