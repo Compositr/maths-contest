@@ -130,5 +130,6 @@ function showResult(correct, incorrect) {
   $("#ending").text(
     `You answered ${correct} questions correctly. You made ${incorrect} mistakes! We think this is worth ${score} points!`
   );
+  module.exports = score;
   document.getElementById("incorrect").innerHTML = incorrectQuestions;
 }

@@ -15,29 +15,6 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyCpwBCqyfiE8TzPUeyeOza-X3JebbTSzFg",
-        authDomain: "multiplication-competition.firebaseapp.com",
-        projectId: "multiplication-competition",
-        storageBucket: "multiplication-competition.appspot.com",
-        messagingSenderId: "152723253859",
-        appId: "1:152723253859:web:188d0b91033b9b4c87a656",
-        measurementId: "G-D9Z8BKQHE7",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="auth.js" charset="utf-8"></script>
     <nav class="navigation">
@@ -55,16 +32,6 @@
         </li>
       </ul>
     </nav>
-
-    <div class="alert alert-danger alert-hidden" id="alert">
-      <p>
-        Hey! We failed to log you in automatically, please check your cookie
-        settings!
-      </p>
-    </div>
-    <div class="alert alert-good alert-hidden" id="success">
-      <p>Logged in!</p>
-    </div>
 
     <!-- partial -->
   </body>
